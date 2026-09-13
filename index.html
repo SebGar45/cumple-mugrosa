@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños, Mugrosa!</title>
+    <!-- Importamos una fuente bonita de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Importamos la librería de confeti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f3eafa; /* Lila muy suave de fondo */
+            font-family: 'Quicksand', sans-serif;
+            color: #4a3b5c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card-container {
+            background-color: #ffffff;
+            max-width: 600px;
+            width: 100%;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(138, 104, 163, 0.15);
+            border: 2px solid #e2d1f0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Pequeño detalle decorativo superior */
+        .card-container::before {
+            content: "✨ 🎉 ✨";
+            display: block;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #7b4b94;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .letter-content {
+            text-align: left;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            color: #5c4b6e;
+            margin-bottom: 30px;
+            background-color: #faf5fc;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #b185db;
+        }
+
+        .letter-content p {
+            margin-bottom: 15px;
+        }
+
+        .letter-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .signature {
+            font-weight: 700;
+            color: #7b4b94;
+            text-align: right;
+            margin-top: 15px;
+        }
+
+        .footer-note {
+            font-size: 0.85rem;
+            color: #9b87af;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <h1>¡Feliz Cumpleaños! 💜</h1>
+        
+        <div class="letter-content">
+            <p>Hola mugrosa,</p>
+            <p>Ante todo aplicando la ingeniería jajajajajaja.</p>
+            <p>Bueno, tú y yo ya hemos hablado de esto, cumplir un año más, más responsabilidades, y todo esto exige mayor madurez, pero la verdad no te voy a amargar tu día con todo eso jajajaj.</p>
+            <p>Necesito que la pases bien, que disfrutes cada día, que te valores y te ames como la hermosa persona que eres, no dejes jamás que nadie te trate mal por ser quien eres. Recuerda que cuentas conmigo para lo que necesites, y que a pesar de no tener una amistad de años y años, en este corto tiempo has logrado entrar en mi corazón como casi nadie lo ha hecho.</p>
+            <p>En fin, te deseo lo mejor y espero que nos podamos ver pronto.</p>
+            <p class="signature">Te quiero muchísimo mugrosa.</p>
+        </div>
+
+        <div class="footer-note">
+            Byeee porque ya muchas líneas de código 
+        </div>
+    </div>
+
+    <script>
+        // Lanzar confeti automáticamente al cargar la página
+        window.onload = function() {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 },
+                colors: ['#b185db', '#d8b4fe', '#fbcfe8', '#c084fc', '#e879f9'] // Tonos lila y rosados acorde al diseño
+            });
+        };
+    </script>
+
+</body>
+</html>
