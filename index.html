@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Feliz Cumpleaños, Mugrosa!</title>
-    <!-- Importamos una fuente bonita de Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Importamos la librería de confeti -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <style>
         * {
@@ -14,9 +12,9 @@
             margin: 0;
             padding: 0;
         }
-
-        body {
-            background-color: #f3eafa; /* Lila muy suave de fondo */
+        body
+        {
+            background-color: #f3eafa;
             font-family: 'Quicksand', sans-serif;
             color: #4a3b5c;
             display: flex;
@@ -25,8 +23,8 @@
             min-height: 100vh;
             padding: 20px;
         }
-
-        .card-container {
+        .card-container
+        {
             background-color: #ffffff;
             max-width: 600px;
             width: 100%;
@@ -38,23 +36,22 @@
             position: relative;
             overflow: hidden;
         }
-
-        /* Pequeño detalle decorativo superior */
-        .card-container::before {
+        .card-container::before
+        {
             content: "✨ 🎉 ✨";
             display: block;
             font-size: 1.5rem;
             margin-bottom: 15px;
         }
-
-        h1 {
+        h1
+        {
             color: #7b4b94;
             font-size: 1.8rem;
             margin-bottom: 25px;
             font-weight: 700;
         }
-
-        .letter-content {
+        .letter-content
+        {
             text-align: left;
             line-height: 1.8;
             font-size: 1.05rem;
@@ -65,23 +62,23 @@
             border-radius: 12px;
             border-left: 5px solid #b185db;
         }
-
-        .letter-content p {
+        .letter-content p
+        {
             margin-bottom: 15px;
         }
-
-        .letter-content p:last-child {
+        .letter-content p:last-child
+        {
             margin-bottom: 0;
         }
-
-        .signature {
+        .signature
+        {
             font-weight: 700;
             color: #7b4b94;
             text-align: right;
             margin-top: 15px;
         }
-
-        .footer-note {
+        .footer-note
+        {
             font-size: 0.85rem;
             color: #9b87af;
             font-style: italic;
@@ -89,10 +86,8 @@
     </style>
 </head>
 <body>
-
     <div class="card-container">
-        <h1>¡Feliz Cumpleaños! 💜</h1>
-        
+        <h1>¡Feliz Cumpleaños! 💜</h1>  
         <div class="letter-content">
             <p>Hola mugrosa,</p>
             <p>Ante todo aplicando la ingeniería jajajajajaja.</p>
@@ -101,16 +96,15 @@
             <p>En fin, te deseo lo mejor y espero que nos podamos ver pronto.</p>
             <p class="signature">Te quiero muchísimo mugrosa.</p>
         </div>
-
         <div class="footer-note">
             Byeee porque ya muchas líneas de código 
         </div>
     </div>
-
     <script>
-        // Lanzar confeti automáticamente al cargar la página
-        window.onload = function() {
-            confetti({
+        window.onload = function()
+        {
+            confetti
+            ({
                 particleCount: 100,
                 spread: 70,
                 origin: { y: 0.6 },
@@ -118,6 +112,5 @@
             });
         };
     </script>
-
 </body>
 </html>
